@@ -1,5 +1,5 @@
 <?php
-$servername = "shravyaratra.com";
+$servername = "localhost";
 $username = "u226556951_shivam";
 $password = "D5j;n#PQ";
 $dbname = "u226556951_contact";
