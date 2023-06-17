@@ -21,7 +21,7 @@ $message = $_POST['message'];
 
 // Prepare and execute the SQL statement to insert the form data into the database
 $stmt = $conn->prepare("INSERT INTO contactForm (name, email, contact, message, companyName) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param($name, $email, $contact, $message, $companyName);
+$stmt->bind_param("sss", $name, $email, $contact, $message, $companyName);
 $stmt->execute();
 
 // Check if the insertion was successful
