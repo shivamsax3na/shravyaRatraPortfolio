@@ -339,7 +339,7 @@
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
                     <form>
                         <div class="row g-3">
-                            <form action="contact.php" method="post">
+                            <form action="https://formsubmit.co/shivamsaxena.w@gmail.com" method="post">
                                 <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" name="name" placeholder="Your Name">
