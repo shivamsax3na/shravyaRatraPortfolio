@@ -20,8 +20,8 @@ $contact = $_POST['contact'];
 $message = $_POST['message'];
 
 // Prepare and execute the SQL statement to insert the form data into the database
-$stmt = $conn->prepare("INSERT INTO contactForm (name, email, company, phone, message) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sssss", $name, $email, $contact, $message, $companyName);
+$stmt = $conn->prepare("INSERT INTO contactForm (name, email, companyName, contact, message) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param($name, $email, $companyName, $contact, $contact, $message);
 $stmt->execute();
 
 // Check if the insertion was successful
